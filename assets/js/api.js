@@ -1,7 +1,7 @@
 
 'use strict';
 
-const api_key = "403359d3ec2440e681d5551c964087aa";
+const api_key = "your api key";
 
 /**
  * Fetch data from server
@@ -27,9 +27,7 @@ export const url = {
   reverseGeo(lat, lon) {
     return `https://api.openweathermap.org/geo/1.0/reverse?${lat}&${lon}&limit=5`
   },
-  /**
-   * @param {string} query Search query e.g.: "London", "New York"
-   */
+  
   geo(query) {
     return `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5`
   }
